@@ -12,175 +12,155 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mi-nav fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mi-nav fixed-top shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">Delidetalles</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
-                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand font-weight-bold" href="index.html">Delidetalles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav mr-auto my-2 my-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">carrito</a>
-                    </li>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Detalle_de_producto.html">Detalle de productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito <span id="carrito-count" class="badge badge-pill badge-danger">0</span></a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Productos
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Productos</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Pasteles</a></li>
-                            <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                            <li><a class="dropdown-item" href="#">Detalles</a></li>
+                            <li><a class="dropdown-item" href="#">Desayunos sorpresa</a></li>
+                            <li><a class="dropdown-item" href="#">Para picar</a></li>
                         </ul>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 
     <div id="miCarrusel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-4 text-center">
-                            <img src="assets/img/1.jpg" class="img-fluid rounded-circle custom-img" alt="Torta 1">
+                            <img src="assets/img/bt.jpg" class="rounded-circle custom-img" alt="Torta 1">
                         </div>
                         <div class="col-4 text-center">
-                            <img src="assets/img/6.jpg" class="img-fluid rounded-circle custom-img" alt="Torta 2">
+                            <img src="assets/img/Imagen2.jpeg" class="rounded-circle custom-img" alt="Torta 2">
                         </div>
                         <div class="col-4 text-center">
-                            <img src="assets/img/box1.jpg" class="img-fluid rounded-circle custom-img" alt="Caja">
+                            <img src="assets/img/Imagen3.jpeg" class="rounded-circle custom-img" alt="Caja">
                         </div>
-                        <div class="col-4 text-center">
-                            <img src="assets/img/bt.jpg" class="img-fluid rounded-circle custom-img" alt="Caja">
-                        </div>
-                        <div class="col-4 text-center">
-                            <img src="assets/img/Imagen1.jpeg" class="img-fluid rounded-circle custom-img" alt="Caja">
-                        </div>
-                        <div class="col-4 text-center">
-                            <img src="assets/img/Imagen10.jpeg" class="img-fluid rounded-circle custom-img" alt="Caja">
-                        </div>
-                        
                     </div>
                 </div>
             </div>
-
             <div class="carousel-item">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-4 text-center">
-                            <img src="assets/img/Imagen2.jpeg" class="img-fluid rounded-circle custom-img" alt="Postre">
+                            <img src="assets/img/Imagen7.jpeg" class="rounded-circle custom-img" alt="Caja 7">
                         </div>
                         <div class="col-4 text-center">
-                            <img src="assets/img/Imagen3.jpeg" class="img-fluid rounded-circle custom-img" alt="Pastel">
+                            <img src="assets/img/Imagen8.jpeg" class="rounded-circle custom-img" alt="Caja 8">
                         </div>
                         <div class="col-4 text-center">
-                            <img src="assets/img/Imagen4.jpeg" class="img-fluid rounded-circle custom-img" alt="Tradicional">
+                            <img src="assets/img/Imagen9.jpeg" class="rounded-circle custom-img" alt="Caja 9">
                         </div>
-                        <div class="col-4 text-center">
-                            <img src="assets/img/Imagen5.jpeg" class="img-fluid rounded-circle custom-img" alt="Caja">
-                        </div>
-                        <div class="col-4 text-center">
-                            <img src="assets/img/Imagen6.jpeg" class="img-fluid rounded-circle custom-img" alt="Caja">
-                        </div>
-                        <div class="col-4 text-center">
-                            <img src="assets/img/Imagen7.jpeg" class="img-fluid rounded-circle custom-img" alt="Caja">
-                        </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
-
         <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
         </a>
         <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
             <span class="sr-only">Siguiente</span>
         </a>
     </div>
 
     <div class="container mb-5">
-        <h2 class="text-center mb-4">Nuestros Productos</h2>
-        
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <h2 class="text-center mb-5 display-4">Nuestros Productos</h2>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/Imagen7.jpeg" class="card-img-top" alt="Pasteles">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">Pasteles Gourmet</h5>
+                        <p class="card-text text-muted small">Chocolate premium, Tres leches y Frutos rojos.</p>
+                        <h4 class="text-primary font-weight-bold">$25.000</h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pb-4 ">
+                        <button class="btn btn-primary btn-block shadow-sm btn-agregar-carrito"data-nombre="Pasteles Gourmet" 
+                        data-precio="25000">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/Imagen6.jpeg" class="card-img-top" alt="Detalle">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">Desayunos Especiales</h5>
+                        <p class="card-text text-muted small">Sorpresas personalizadas para empezar el día.</p>
+                        <h4 class="text-primary font-weight-bold">$35.000</h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pb-4">
+                        <button class="btn btn-primary btn-block shadow-sm btn-agregar-carrito"data-nombre="Desayunos Especiales" 
+                        data-precio="$35000">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/box1.jpg" class="card-img-top" alt="Mas Detalles">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">Cajas Sorpresa</h5>
+                        <p class="card-text text-muted small">Detalles de cumpleaños con dulces y globos.</p>
+                        <h4 class="text-primary font-weight-bold">$53.000</h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pb-4">
+                        <button class="btn btn-primary btn-block shadow-sm btn-agregar-carrito"data-nombre="Cajas Sorpresa" 
+                        data-precio="25000">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/Imagen10.jpeg" class="card-img-top" alt="Para picar">
+                    <div class="card-body text-center">
+                        <h5 class="card-title font-weight-bold">Tablas Gourmet</h5>
+                        <p class="card-text text-muted small">Snacks premium seleccionados para compartir.</p>
+                        <h4 class="text-primary font-weight-bold">$30.000</h4>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0 pb-4">
+                        <button class="btn btn-primary btn-block shadow-sm btn-agregar-carrito"data-nombre="Pasteles Gourmet" 
+                        data-precio="25000">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" bg-blue border-top-0  ">
+                <a href="Detalle_de_producto.html">Ver mas productos</a>
+            </div>
             
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/Imagen7.jpeg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Pasteles</h5>
-                        <p class="card-text text-muted">Chocolate, Tres leches,Frutos rojos</p>
-                        <h6 class="fw-bold">$25000</h6>
-                    </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <button class="btn btn-primary w-100">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/Imagen6.jpeg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Detalle</h5>
-                        <p class="card-text text-muted">desayunos sorpresa.</p>
-                        <h6 class="fw-bold">$35000</h6>
-                    </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <button class="btn btn-primary w-100">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/box1.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Mas Detalles</h5>
-                        <p class="card-text text-muted">dettales cumpleaños y mas.</p>
-                        <h6 class="fw-bold">$53000</h6>
-                    </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <button class="btn btn-primary w-100">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/Imagen10.jpeg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Para picar</h5>
-                        <p class="card-text text-muted">Snack para fiestas .</p>
-                        <h6 class="fw-bold">$30000</h6>
-                    </div>
-                    <div class="card-footer bg-transparent border-top-0">
-                        <button class="btn btn-primary w-100">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-
-        </div> </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+        <p class="mb-1">© 2026 <strong>Delidetalles chile</strong> - Hecho con ❤️</p>
+        <div class="small">
+            <span class="mx-2">Santiago, Chile</span> | 
+            <span class="mx-2">WhatsApp: +56 9 59598859</span>
+        </div>
+    </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

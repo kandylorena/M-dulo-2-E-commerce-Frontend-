@@ -1,53 +1,158 @@
 /* 1. Separación del Navbar */
 #miCarrusel {
-    margin-top: 120px !important; 
-    padding-bottom: 60px;
+    margin-top: 80px !important;
+    padding-bottom: 40px;
 }
 
-/* 2. Tamaño de las imágenes XL */
+/* 2. Tamaño de las imágenes*/
 .custom-img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
-    border: 8px solid #fff;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    /* Animación más fluida */
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    display: block;
-    margin: 0 auto;
-    /* Asegura que sigan siendo círculos si el contenedor cambia */
-    border-radius: 50%; 
+    border: 6px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
 }
 
-/* 3. Efecto al pasar el mouse */
-.custom-img:hover {
-    transform: scale(1.08);
-    z-index: 10;
-    cursor: pointer;
+
+/* Espaciado del Carrusel */
+#miCarrusel {
+    margin-bottom: 60px;
 }
 
-/* 4. Ajuste para que las flechas se vean mejor con fotos grandes */
+/* Estilo para las imágenes de las Cards */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Colores de botones personalizados */
+.btn-primary {
+    background-color: #f38ee6;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #d31cb4;
+}
+
+/*  flechas más grandes y visibles */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    height: 40px;
-    width: 40px;
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.5));
+    height: 60px;
+    /* Antes 40px */
+    width: 60px;
+    /* Antes 40px */
+    filter: drop-shadow(0px 0px 8px rgba(248, 135, 210, 0.6));
+    background-color: rgba(233, 157, 201, 0.3);
+    /* Fondo sutil para que se vean sobre cualquier color */
+    border-radius: 50%;
 }
 
-/* 5. Responsividad */
-@media (max-width: 992px) {
-    #miCarrusel { margin-top: 100px !important; }
+/*  Responsividad se ajustada  tamaños */
+@media (max-width: 1200px) {
     .custom-img {
-        width: 200px;
-        height: 200px;
-        border-width: 5px; /* Borde más fino en tablets */
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    #miCarrusel {
+        margin-top: 100px !important;
+    }
+
+    .custom-img {
+        width: 250px;
+        /* Antes 200px */
+        height: 250px;
+        border-width: 6px;
     }
 }
 
 @media (max-width: 576px) {
-    #miCarrusel { margin-top: 80px !important; }
-    .custom-img {
-        width: 160px;
-        height: 160px;
+    #miCarrusel {
+        margin-top: 80px !important;
     }
+
+    .custom-img {
+        width: 180px;
+        /* Antes 160px */
+        height: 180px;
+    }
+}
+
+
+
+/* Estilo de la Card de Detalle */
+.card-detalle {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Imagen circular y grande */
+.img-detalle {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.precio-tag {
+    color: #27ae60;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-agregar {
+    background-color: #f38ee6;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: #d31cb4;
+}
+
+
+
+footer {
+    border-top: 3px solid #d31cb4;
+    width: 100%;
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+
+/* se mantenga en el lugar*/
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+    /* Espacio para que el footer no tape el contenido */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }
