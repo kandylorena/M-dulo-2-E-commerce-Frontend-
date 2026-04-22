@@ -32,9 +32,7 @@
     transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
+
 
 /* Colores de botones personalizados */
 .btn-primary {
@@ -55,44 +53,8 @@
     /* Antes 40px */
     filter: drop-shadow(0px 0px 8px rgba(248, 135, 210, 0.6));
     background-color: rgba(233, 157, 201, 0.3);
-    /* Fondo sutil para que se vean sobre cualquier color */
     border-radius: 50%;
 }
-
-/*  Responsividad se ajustada  tamaños */
-@media (max-width: 1200px) {
-    .custom-img {
-        width: 320px;
-        height: 320px;
-    }
-}
-
-@media (max-width: 992px) {
-    #miCarrusel {
-        margin-top: 100px !important;
-    }
-
-    .custom-img {
-        width: 250px;
-        /* Antes 200px */
-        height: 250px;
-        border-width: 6px;
-    }
-}
-
-@media (max-width: 576px) {
-    #miCarrusel {
-        margin-top: 80px !important;
-    }
-
-    .custom-img {
-        width: 180px;
-        /* Antes 160px */
-        height: 180px;
-    }
-}
-
-
 
 /* Estilo de la Card de Detalle */
 .card-detalle {
@@ -155,4 +117,42 @@ body {
 footer {
     position: absolute;
     bottom: 0;
+}
+
+/*  Responsividad se ajustada  tamaños */
+@media (max-width: 1200px) {
+    .custom-img {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 992px) {
+    #miCarrusel {
+        margin-top: 100px !important;
+    }
+
+    .custom-img {
+        width: 250px;
+        /* Antes 200px */
+        height: 250px;
+        border-width: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    #miCarrusel {
+        margin-top: 80px !important;
+    }
+
+    .custom-img {
+        width: 180px;
+        /* Antes 160px */
+        height: 180px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
